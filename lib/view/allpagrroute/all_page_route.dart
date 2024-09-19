@@ -2,6 +2,7 @@ import 'package:apiintegrationall/view/homePage/home-page.dart';
 import 'package:apiintegrationall/view/postapi/regestion.dart';
 import 'package:flutter/material.dart';
 
+import '../DioHomePage/dio_home_page.dart';
 import '../GetApiWithoutmodel/getapiwithoutmodel.dart';
 import '../loginApi/login_api.dart';
 import '../updateApi/update_Api.dart';
@@ -99,7 +100,7 @@ class AllPageRoute extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 50,
               child: ElevatedButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (_)=>HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (_)=>DioHomePage()));
               },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
@@ -108,7 +109,7 @@ class AllPageRoute extends StatelessWidget {
                       )
                   ),
 
-                  child:Text('Get Api',style: TextStyle(
+                  child:Text('Ecommerce',style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                   ),)),
